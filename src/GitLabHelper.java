@@ -1,13 +1,11 @@
 public class GitLabHelper {
-    private String person1;
-    private String person2;
+    private String[] persons;
 
-    GitLabHelper(String person1, String person2) {
-        this.person1 = person1;
-        this.person2 = person2;
+    GitLabHelper(String[] persons) {
+        this.persons = persons;
     }
 
     public void PrintWelcomeMessage() {
-        System.out.print("This is a lesson on git made by " + person1 + " and " + person2);
+        System.out.print("This is a lesson on git made by " + Arrays.toString(persons));
     }
 }
